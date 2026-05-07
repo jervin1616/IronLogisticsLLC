@@ -18,8 +18,9 @@
       --color-near-black:   #111111;
       --color-surface:      #161616;
       --color-surface-raised: #1e1e1e;
-      --color-green:        #2d4a1e;
-      --color-green-light:  #3d6128;
+      --color-green:        #2d5a1e;
+      --color-green-light:  #3a7526;
+      --color-green-bright: #4a9830;
       --color-gold:         #c9a84c;
       --color-gold-muted:   #a08438;
       --color-silver:       #9a9a9a;
@@ -100,7 +101,7 @@
 
     .site-nav.scrolled {
       background: var(--color-near-black);
-      border-bottom-color: rgba(201, 168, 76, 0.3);
+      border-bottom-color: rgba(58, 117, 38, 0.5);
     }
 
     .nav-brand {
@@ -108,7 +109,7 @@
       font-weight: 700;
       font-size: 0.9375rem;
       letter-spacing: 0.2em;
-      color: var(--color-gold);
+      color: var(--color-white);
       text-decoration: none;
       text-transform: uppercase;
       font-variant: small-caps;
@@ -139,7 +140,7 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background: var(--color-gold);
+      background: var(--color-green-light);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform var(--transition-fast);
@@ -171,12 +172,12 @@
       width: min(40vw, 440px);
       height: min(56vw, 620px);
       pointer-events: none;
-      opacity: 0.17;
+      opacity: 0.28;
     }
 
     .hero-cross-bg .cross-vert {
       position: absolute;
-      background: var(--color-white);
+      background: var(--color-green-light);
       width: 22%;
       height: 100%;
       left: 39%;
@@ -185,7 +186,7 @@
 
     .hero-cross-bg .cross-horiz {
       position: absolute;
-      background: var(--color-white);
+      background: var(--color-green-light);
       width: 100%;
       height: 24%;
       top: 26%;
@@ -210,7 +211,7 @@
       font-family: var(--font-secondary);
       font-size: 0.6875rem;
       letter-spacing: 0.3em;
-      color: var(--color-gold);
+      color: var(--color-green-bright);
       text-transform: uppercase;
       margin-bottom: 0.75rem;
       opacity: 0;
@@ -248,7 +249,7 @@
       font-weight: 700;
       font-size: clamp(26px, 5.2vw, 64px);
       letter-spacing: 0.2em;
-      color: var(--color-gold);
+      color: var(--color-green-light);
       line-height: 1.15;
       margin-bottom: var(--space-md);
       opacity: 0;
@@ -313,19 +314,20 @@
       font-size: 0.8125rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--color-gold);
-      border: 1px solid var(--color-gold);
+      color: var(--color-green-light);
+      border: 1px solid var(--color-green-light);
       padding: 0.875rem 2.25rem;
       text-decoration: none;
       border-radius: 2px;
       background: transparent;
       cursor: pointer;
-      transition: background var(--transition-fast), color var(--transition-fast);
+      transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
     }
 
     .btn-outline:hover {
-      background: var(--color-gold);
-      color: var(--color-black);
+      background: var(--color-green-light);
+      border-color: var(--color-green-light);
+      color: var(--color-white);
     }
 
     .hero-scripture {
@@ -362,8 +364,8 @@
     .chevron {
       width: 9px;
       height: 9px;
-      border-right: 1.5px solid var(--color-gold);
-      border-bottom: 1.5px solid var(--color-gold);
+      border-right: 1.5px solid var(--color-green-light);
+      border-bottom: 1.5px solid var(--color-green-light);
       transform: rotate(45deg);
       animation: chevronBounce 1.5s ease infinite;
     }
@@ -398,7 +400,7 @@
       font-family: var(--font-secondary);
       font-size: 0.6875rem;
       letter-spacing: 0.3em;
-      color: var(--color-gold);
+      color: var(--color-green-bright);
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 0.875rem;
@@ -436,7 +438,7 @@
 
     .service-card {
       background: var(--color-surface-raised);
-      border: 1px solid rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(45, 90, 30, 0.4);
       padding: var(--space-lg) var(--space-md);
       box-shadow: 0 4px 32px rgba(0, 0, 0, 0.45);
       transition:
@@ -446,7 +448,7 @@
     }
 
     .service-card:hover {
-      border-color: rgba(201, 168, 76, 0.5);
+      border-color: rgba(58, 117, 38, 0.75);
       transform: translateY(-4px);
       box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
     }
@@ -472,7 +474,7 @@
     .card-rule {
       width: 20px;
       height: 1px;
-      background: var(--color-gold);
+      background: var(--color-green-light);
       margin-bottom: var(--space-md);
     }
 
@@ -506,7 +508,7 @@
       font-family: var(--font-secondary);
       font-size: 0.6875rem;
       letter-spacing: 0.3em;
-      color: var(--color-gold);
+      color: var(--color-green-bright);
       text-transform: uppercase;
       margin-bottom: 0.875rem;
     }
@@ -635,7 +637,7 @@
       font-family: var(--font-secondary);
       font-size: 0.625rem;
       letter-spacing: 0.28em;
-      color: var(--color-gold);
+      color: var(--color-green-bright);
       text-transform: uppercase;
       margin-bottom: 0.3rem;
     }
@@ -653,7 +655,7 @@
     }
 
     .contact-value a:hover {
-      color: var(--color-gold);
+      color: var(--color-green-bright);
     }
 
     .btn-cta {
@@ -663,9 +665,9 @@
       font-size: 0.875rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--color-black);
-      background: var(--color-gold);
-      border: 1px solid var(--color-gold);
+      color: var(--color-white);
+      background: var(--color-green);
+      border: 1px solid var(--color-green-light);
       padding: 1.0625rem 3rem;
       text-decoration: none;
       border-radius: 2px;
@@ -676,8 +678,8 @@
     }
 
     .btn-cta:hover {
-      background: #d4af62;
-      border-color: #d4af62;
+      background: var(--color-green-light);
+      border-color: var(--color-green-bright);
     }
 
     .contact-scripture {
@@ -694,7 +696,7 @@
        ============================================================ */
     footer {
       background: var(--color-black);
-      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      border-top: 1px solid rgba(45, 90, 30, 0.45);
       padding: var(--space-lg) var(--space-md);
       text-align: center;
     }
@@ -705,7 +707,7 @@
       font-weight: 700;
       font-size: 0.9375rem;
       letter-spacing: 0.22em;
-      color: var(--color-gold);
+      color: var(--color-green-bright);
       text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
